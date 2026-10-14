@@ -14,6 +14,10 @@ void main (){
   var c = Couleur(10,20, 30);
   print (c.r);
    var a = Couleur.bleu() ;
+   var b= Couleur .vert();
+   var d=  Couleur.rouge();
    a.afficherCouleur();
+   b.afficherCouleur();
+   d.afficherCouleur();
 
 }
