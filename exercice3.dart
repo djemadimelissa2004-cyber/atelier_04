@@ -11,3 +11,8 @@ void depot(double montant) {
   }
 }
 }
+void main (){
+  var moncompte = Compte("melissa");
+ moncompte.depot(500.20);
+ print(moncompte.solde);
+}
