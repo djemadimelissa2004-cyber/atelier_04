@@ -19,3 +19,9 @@ class Film extends Media {
 void afficherType (){
   print("ceci est film :$titre par $dureeMinutes.");}
 }
+void main() {
+  List<Media> catalogue = [Livre("Une si longue lettre", "Mariama Bâ"),  Film("Le Voyage de Chihiro", 125), Film("Timbuktu", 97)];
+  for (var a in catalogue) {
+    a.afficherType();
+  }
+}
