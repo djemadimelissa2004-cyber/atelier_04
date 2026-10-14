@@ -10,5 +10,5 @@ class Livre extends Media {
   Livre(super.titre,this.auteur); 
   @override 
 void afficherType (){
-  print("ceci est livre :$titre par $auteur.")}
+  print("ceci est livre :$titre par $auteur.");}
 }
