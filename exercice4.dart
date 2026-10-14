@@ -12,3 +12,10 @@ class Livre extends Media {
 void afficherType (){
   print("ceci est livre :$titre par $auteur.");}
 }
+class Film extends Media {
+  final int dureeMinutes;
+  Film(super.titre,this.dureeMinutes); 
+  @override 
+void afficherType (){
+  print("ceci est film :$titre par $dureeMinutes.");}
+}
