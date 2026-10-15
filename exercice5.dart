@@ -23,3 +23,10 @@ class Rectangle extends Forme {
   return largeur*longeur ;
 }
 }
+void main(){
+ var  c =Cercle(9);
+  var  r = Rectangle(4,5);
+  print(c.calculerAire());
+ print(r.calculerAire());
+ c.afficherMessage();
+}
