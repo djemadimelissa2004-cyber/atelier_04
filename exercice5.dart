@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:math';
   abstract class  Forme {
   double calculerAire();
@@ -12,4 +13,13 @@ class Cercle extends Forme{
   double calculerAire(){
     return pi*rayon*rayon ;
   }
+}
+class Rectangle extends Forme {
+  final double largeur ;
+   final double longeur;
+  Rectangle(this.largeur,this.longeur);
+  @override
+ double calculerAire(){ 
+  return largeur*longeur ;
+}
 }
