@@ -26,7 +26,9 @@ class Rectangle extends Forme {
 void main(){
  var  c =Cercle(9);
   var  r = Rectangle(4,5);
+ 
+  c.afficherMessage();
   print(c.calculerAire());
- print(r.calculerAire());
- c.afficherMessage();
+  r.afficherMessage();
+  print(r.calculerAire());
 }
