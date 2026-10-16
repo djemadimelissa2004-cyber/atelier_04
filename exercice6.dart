@@ -20,3 +20,14 @@ void deconnecter (){
   print("Deconnexion reussie de la base de donnes");
 }
 }
+void main (){
+  var serveur=ServeurAPI();
+  var base= BaseDeDonnes();
+  List<Connectable> Services =[ serveur,base ];
+  for (var a  in Services) {
+    a.connecter("melissa");
+    a.deconnecter();
+  }
+
+
+}
